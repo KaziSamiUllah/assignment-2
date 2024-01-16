@@ -1,0 +1,43 @@
+/* Initial styles for the hamburger menu */
+.menu-icon {
+    font-size: 1.5rem; /* Adjust the size of the hamburger icon */
+    cursor: pointer;
+    display: none; /* Initially hide the hamburger icon */
+}
+
+/* Media query to show/hide the hamburger icon based on screen width */
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the hamburger icon on smaller screens */
+    }
+
+    #nav-icons {
+        display: none; /* Hide the navigation icons by default on smaller screens */
+        flex-direction: column; /* Stack the navigation links vertically */
+        position: absolute;
+        top: 60px; /* Adjust the top position to your liking */
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* Set a background color for the dropdown */
+        z-index: 1; /* Ensure the dropdown appears above other elements */
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    }
+
+    #menu-toggle:checked + .menu-icon + #nav-icons {
+        display: flex; /* Show the navigation icons when the checkbox is checked */
+    }
+
+    /* Style adjustments for smaller screens */
+    nav {
+        flex-direction: column; /* Stack the logo and hamburger icon vertically */
+        align-items: flex-start; /* Align items to the start of the container */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Add some space between the logo and hamburger icon */
+    }
+
+    nav a {
+        margin: 10px 0; /* Add space between each navigation link */
+    }
+}

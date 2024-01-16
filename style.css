@@ -412,24 +412,33 @@ hr{
     nav {
         flex-direction: column;
     }
-
-
-    #logo {
-        width: 100%;
+    nav div{
+        margin:10px 0;
     }
 
 
 
-    #logo img {
+    .logo {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .logo img {
         transform: scale(.5);
     }
 
-    #logo h2 {
-        font-size: 1.1rem;
+    .logo h2 {
+        font-size: 1.2rem;
     }
 
     .banner h1 {
-        font-size: 22px;
+        font-size: .5rem;
+        width: 90%;
+    }
+    .banner p{
         width: 80%;
     }
 
