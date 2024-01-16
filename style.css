@@ -50,7 +50,7 @@ section {
 }
 
 
-body {
+main{
     margin: 3.6% 9.3% 0% 9.3%;
 }
 
@@ -80,18 +80,18 @@ nav a {
     margin: 0 1.18vw;
 }
 
-#logo {
+.logo {
     display: flex;
     /* background-color: aqua; */
     align-items: center;
 }
 
-#logo>img {
+.logo>img {
     width: 48px;
     height: 56px;
 }
 
-#logo h2 {
+.logo h2 {
     color: #131318;
     font-size: 36px;
     font-style: normal;
@@ -339,8 +339,43 @@ margin: 12px 0;
 #save-ofr h4{
     color: white;
 }
-
-
+/* footer */
+footer{
+  background-color:  rgba(19, 19, 24, 0.05);
+  padding: 7.6vw;
+  text-align: center;
+}
+    
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.social img{
+    width: 2rem ;
+}
+.footer-logo{
+   justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.footer-logo h2{
+    color: var(--Dark-01, #131318);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+footer h3{
+    margin-top: 3%;
+}
+hr{
+    background: rgba(19, 19, 24, 0.10);
+    height: 1px;
+}
 
 
 
@@ -359,7 +394,7 @@ margin: 12px 0;
 
 
 @media screen and (max-width: 600px) {
-    body {
+    main{
         margin: 0 5%;
     }
     .topic-text {
@@ -371,7 +406,7 @@ margin: 12px 0;
     }
 
     section {
-        margin-bottom: 24px;
+        margin-bottom: 50px;
     }
 
     nav {
@@ -482,5 +517,11 @@ margin: 12px 0;
     #save-ofr h4{
         font-size: 1.2em;
     }
-
+    footer{
+        padding: 5% 20%;
+    }
+    .footer-logo>h2{
+        font-size: 1.5rem;
+    }
+    
 }
