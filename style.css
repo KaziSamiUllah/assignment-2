@@ -47,7 +47,7 @@ section {
     text-decoration: none;
     width: 174px;
     height: 52px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -483,7 +483,8 @@ hr {
     nav div {
         margin: 10px 0;
     }
-/* 
+
+    /* 
     /* Nav hamburger button */
     /* .hamburger-button {
         width: 1.5rem;
@@ -522,10 +523,13 @@ hr {
         gap: 16px;
         width: 80%;
     }
-    #banner-form input, select{
+
+    #banner-form input,
+    select {
         width: 100%;
 
     }
+
     .section-2 {
         flex-direction: column;
     }
