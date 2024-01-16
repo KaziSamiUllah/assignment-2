@@ -144,22 +144,24 @@ nav a {
 #banner-form input,
 select,
 button {
-    padding: 7.5px 12px;
+    padding: 10px 0;
+    text-align:  center;
     border: none;
     width: 90%;
     border-radius: 8px;
 }
 
+
 #banner-form button {
     background-color: #FF5400;
     color: #FFF;
     width: 100%;
+    cursor: pointer;
 }
 
-#banner-form select {
+/* #banner-form select {
     width: 100%;
-}
-
+} */
 
 
 /* Section-2 */
@@ -279,12 +281,42 @@ button {
     justify-content: center;
 }
 
+
+
+
+
+/* section 5- video */
+
+.video{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #6e6e6e; */
+}
+.video-text{
+    padding: 3%;
+    width: 50%;
+}
+.video-text h3{
+    margin-bottom: 3%;
+}
+.video-play iframe{
+    border-radius: 20px; 
+    width: 50vw;
+    height: 30vw;
+
+}
+
+
+
+
+
+
+
 /* Section-7 */
 
 .section-7{
     display: flex;
-    gap: 24px;
-    justify-content: center;
+    justify-content: space-between;
 }
 .subscribe{
    padding: 3%;
@@ -293,7 +325,7 @@ button {
    
 }
 .subscribe p{
-    width: 80%;
+    width: 90%;
     margin: 20px 0;
     
 }
@@ -415,8 +447,14 @@ hr{
     nav div{
         margin:10px 0;
     }
-
-
+    /* Nav hamburger button */
+    .hamburger-button {
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    
 
     .logo {
         margin-left: auto;
@@ -490,8 +528,24 @@ hr{
     }
 
 
+    /* section 5- video -resp */
 
-
+    
+    .video{
+        flex-direction: column;
+    }
+    .video-play iframe{
+        border-radius: 20px; 
+        width: 100%;
+        height: 300px;
+    }
+    .video-text{
+        padding: 3%;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
 
@@ -500,21 +554,31 @@ hr{
         width: 100%;
         justify-content: center;
     }
+    .subscribe{
+        text-align: center;
+    }
+    .subscribe p{
+        background-color: #FF5400;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /* .s7-images{
         widows: 100%;
     } */
     .s7-images img{
         width: 100%;
+        margin-top: 5%;
     }
     #save-ofr{
         background-color: #FF5400;
         width: 50%;
-        padding: 2%  ; 
+        padding: 2%;
         left: 36vw;
         bottom: 10vw;
         border-radius: 8px;
         text-align: center;
-
         position: absolute;
         z-index: 2;
         transform: rotate(-19.628deg);
@@ -531,5 +595,4 @@ hr{
     .footer-logo>h2{
         font-size: 1.2rem;
     }
-    
 }
