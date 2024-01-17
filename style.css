@@ -323,26 +323,30 @@ nav a {
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
+
 }
 
 .card2 {
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
+ 
 }
 
 .card3 {
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
+
 }
 
 .card1,
 .card2,
 .card3 {
     width: 40vw;
+    height: 300px;
     margin: 12px;
-    padding: 32px;
+    padding: 50px;
     border: none;
 }
 
@@ -439,6 +443,8 @@ nav a {
     padding: 3%;
     border: 2px solid #FF5400;
     border-radius: 8px;
+    width: 100%;
+    margin-right: 50px;
 
 }
 
@@ -725,6 +731,8 @@ hr {
 
     .subscribe {
         text-align: center;
+        width: 82.8vw;
+        margin: auto;
     }
 
     .subscribe p {
